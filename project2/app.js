@@ -1,0 +1,131 @@
+require("dotenv").config();
+
+const mongoose = require("mongoose");
+const uri = process.env.MONGODB_URI;
+
+mongoose
+  .connect(uri)
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((err) => {
+    console.error("Error connecting to MongoDB:", err);
+  });
+
+const userSchema = new mongoose.Schema({
+  name: String,
+  email: String,
+  age: Number,
+  isActive: Boolean,
+  tags: [String],
+  createdAt: { type: Date, default: Date.now },
+});
+
+const User = mongoose.model("User", userSchema);
+
+async function createUser() {
+  try {
+    /*
+    // Create a new Document
+    const newUser = await User.create({
+      name: "John Doe",
+      email: "H0I2o@example.com",
+      age: 30,
+      isActive: true,
+      tags: ["developer", "javascript", "mongodb"],
+    });
+
+    console.log("User created successfully:", newUser);
+
+    const allUsers = await User.find({});
+
+    console.log("All users in the database:", allUsers);
+    */
+    /*
+    const newUser = await User.create({
+      name: "John Jacobs",
+      email: "H5kljlkj2o@example.com",
+      age: 30,
+      isActive: false,
+      tags: ["developer", "javascript", "mongodb"],
+    });
+
+    console.log("User created successfully:", newUser);
+    */
+    /*
+    const getNonActiveUsers = await User.find({ isActive: false });
+    console.log("Non-active users:", getNonActiveUsers);
+    */
+    /*
+    const getLastCreatedUser = await User.findById(newUser._id);
+    console.log("Last created user by User Id: ", getLastCreatedUser);
+    */
+    /*
+    // Selecting some specific fields
+    const selectedFieldData = await User.find({}).select({
+      name: 1,
+      age: 1,
+      email: 1,
+    });
+
+    console.log("Selected Fields Query Output: ", selectedFieldData);
+    */
+    /*
+    // Implementing pagination and want to skip first two items on a particular page
+
+    const limitedUsers = await User.find().limit(2).skip(1).select("name email age -_id");
+    console.log("Limited Users: ", limitedUsers);
+    */
+    // Do some sorting
+    /*
+    const sortedUsers = await User.find()
+      .sort({ name: -1 })
+      .select("name age email");
+    console.log("Sorted Users: ", sortedUsers);
+    */
+    /*
+    const countAge = await User.countDocuments({ age: 30 });
+    console.log("Number of users with age 30: ", countAge);
+    */
+    /*
+    const newUser = await User.create({
+      name: "Mulla Bkl",
+      email: "mullokiaisikitaisio@example.com",
+      age: 30,
+      isActive: false,
+      tags: ["developer", "javascript", "mongodb"],
+    });
+
+    console.log("User created successfully:", newUser);
+    */
+    /*
+    const deleteUser = await User.findOneAndDelete({ name: "Mulla Bkl" });
+    console.log("Deleted User: ", deleteUser);
+    */
+    /*
+    const updateUser = await User.findOneAndUpdate(
+      { name: "Mulla Bkl" },
+      {
+        $set: {
+          name: "Mulle Hote hain harami, aurton par karte hain atyachaar, unka Allah unhe kaise maaf kar deta hain",
+        },
+        $push: {
+          tags: "updated",
+        },
+      },
+      { new: true }
+    );
+
+    console.log("Updated User: ", updateUser);
+    */
+
+    
+  } catch (err) {
+    console.error("Error creating user:", err);
+  } finally {
+    await mongoose.connection.close();
+    console.log("Connection closed");
+  }
+}
+
+createUser();
