@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling"
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling"
+  },
+
+  { "title": "A Game of Thrones", "author": "George R.R. Martin" },
+  { "title": "A Clash of Kings", "author": "George R.R. Martin" },
+
+  { "title": "The Hobbit", "author": "J.R.R. Tolkien" },
+  { "title": "The Fellowship of the Ring", "author": "J.R.R. Tolkien" },
+
+  { "title": "Murder on the Orient Express", "author": "Agatha Christie" },
+  { "title": "And Then There Were None", "author": "Agatha Christie" },
+
+  { "title": "The Da Vinci Code", "author": "Dan Brown" },
+  { "title": "Angels & Demons", "author": "Dan Brown" },
+
+  { "title": "The Shining", "author": "Stephen King" },
+  { "title": "It", "author": "Stephen King" },
+
+  { "title": "The Alchemist", "author": "Paulo Coelho" },
+  { "title": "Brida", "author": "Paulo Coelho" },
+
+  { "title": "The Adventures of Tom Sawyer", "author": "Mark Twain" },
+  { "title": "Adventures of Huckleberry Finn", "author": "Mark Twain" },
+
+  { "title": "Pride and Prejudice", "author": "Jane Austen" },
+  { "title": "Sense and Sensibility", "author": "Jane Austen" },
+
+  { "title": "The Old Man and the Sea", "author": "Ernest Hemingway" },
+  { "title": "A Farewell to Arms", "author": "Ernest Hemingway" }
+]

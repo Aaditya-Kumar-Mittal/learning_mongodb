@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "b563c60d-f5e0-4390-90c4-95ec70773785",
+    "name": "Intermediate MongoDB and Aggregation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": ""
+  },
+  "item": [
+    {
+      "name": "Add Multiple Products",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:3000/api/products/add",
+          "path": ["api", "products", "add"],
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000"
+        }
+      }
+    },
+    {
+      "name": "Fetch Product Stats",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/products/stats",
+          "path": ["api", "products", "stats"],
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000"
+        }
+      }
+    },
+    {
+      "name": "Fetch Product Analysis",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/products/analysis",
+          "path": ["api", "products", "analysis"],
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000"
+        }
+      }
+    },
+    {
+      "name": "Add Authors",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:3000/api/books/addAuthors",
+          "path": ["api", "books", "addAuthors"],
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000"
+        },
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\r\n    \"name\": \"Dan Brown\",\r\n    \"bio\": \"American author of thriller novels including The Da Vinci Code.\"\r\n  }"
+        }
+      }
+    },
+    {
+      "name": "Add New Book",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:3000/api/books/addBooks",
+          "path": ["api", "books", "addBooks"],
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000"
+        },
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\n  \"title\": \"A Clash of Kings\",\n  \"author\": \"<author_id>\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Fetch Book Data",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/books/bookData/<id>",
+          "path": ["api", "books", "bookData", "<id>"],
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000"
+        }
+      }
+    }
+  ]
+}
