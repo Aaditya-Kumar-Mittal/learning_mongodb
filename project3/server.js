@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3000;
 
 const productRoutes = require("./routes/route-products");
+const bookRoutes = require("./routes/route-books");
 
 const app = express();
 
@@ -22,6 +23,7 @@ mongoose
 app.use(express.json());
 
 app.use("/api/products", productRoutes);
+app.use("/api/books", bookRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

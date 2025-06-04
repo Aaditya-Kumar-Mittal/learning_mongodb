@@ -1,0 +1,42 @@
+[
+  {
+    "name": "J.K. Rowling",
+    "bio": "British author, best known for the Harry Potter series."
+  },
+  {
+    "name": "George R.R. Martin",
+    "bio": "American novelist, known for A Song of Ice and Fire."
+  },
+  {
+    "name": "J.R.R. Tolkien",
+    "bio": "English writer and academic, author of The Lord of the Rings."
+  },
+  {
+    "name": "Agatha Christie",
+    "bio": "English writer famous for detective novels featuring Hercule Poirot."
+  },
+  {
+    "name": "Dan Brown",
+    "bio": "American author of thriller novels including The Da Vinci Code."
+  },
+  {
+    "name": "Stephen King",
+    "bio": "Prolific American author of horror and supernatural fiction."
+  },
+  {
+    "name": "Paulo Coelho",
+    "bio": "Brazilian author best known for his novel The Alchemist."
+  },
+  {
+    "name": "Mark Twain",
+    "bio": "American writer, humorist, known for Adventures of Huckleberry Finn."
+  },
+  {
+    "name": "Jane Austen",
+    "bio": "English novelist known for her romantic fiction and realism."
+  },
+  {
+    "name": "Ernest Hemingway",
+    "bio": "American novelist and journalist, Nobel Prize winner."
+  }
+]
