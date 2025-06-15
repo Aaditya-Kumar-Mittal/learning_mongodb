@@ -1,6 +1,0 @@
-moon modler is a data modeling tool for mongodb and sql. Used in corporates
-ER diagrams will be key and important for a backend engineer.
-
-mongoose is a helper which helps us in data modeling
-
-Github codespaces, Stackbliz,  CodeSandbox
