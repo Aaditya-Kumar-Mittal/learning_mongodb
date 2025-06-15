@@ -116,7 +116,3 @@ This markdown summarizes my learnings in **data modeling**, primarily focused ar
 Learning data modeling is not just about defining models — it's about understanding **real-world systems**, mapping them efficiently in a database, and thinking critically about **how data flows and grows**. Tools like **Mongoose**, paired with visual ER modeling via **Moon Modeler**, make it powerful and manageable.
 
 > 💬 “A good data model is the backbone of a scalable backend system.”
-
----
-
-Let me know if you'd like this as a downloadable `README.md` file or want code samples for any of the models discussed above!
